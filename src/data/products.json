@@ -1,0 +1,66 @@
+[
+  {
+    "id": "1",
+    "name": "Mini Phone",
+    "slug": "mini-phone",
+    "image": "/products/phone.jpg",
+    "price": 199.99,
+    "description": "A compact and stylish phone."
+  },
+  {
+    "id": "2",
+    "name": "Wireless Earbuds",
+    "slug": "wireless-earbuds",
+    "image": "/products/earbuds.jpg",
+    "price": 89.99,
+    "description": "High-quality wireless earbuds with noise cancellation."
+  },
+  {
+    "id": "3",
+    "name": "Smart Watch",
+    "slug": "smart-watch",
+    "image": "/products/watch.jpg",
+    "price": 149.99,
+    "description": "A feature-packed smartwatch with health monitoring."
+  },
+  {
+    "id": "4",
+    "name": "Bluetooth Speaker",
+    "slug": "bluetooth-speaker",
+    "image": "/products/speaker.jpg",
+    "price": 59.99,
+    "description": "Portable Bluetooth speaker with excellent sound quality."
+  },
+  {
+    "id": "5",
+    "name": "Laptop Backpack",
+    "slug": "laptop-backpack",
+    "image": "/products/backpack.jpg",
+    "price": 49.99,
+    "description": "Durable and spacious backpack for laptops and accessories."
+  },
+  {
+    "id": "6",
+    "name": "Fitness Tracker",
+    "slug": "fitness-tracker",
+    "image": "/products/tracker.jpg",
+    "price": 39.99,
+    "description": "Track your fitness goals with this easy-to-use fitness tracker."
+  },
+  {
+    "id": "7",
+    "name": "Wireless Charger",
+    "slug": "wireless-charger",
+    "image": "/products/charger.jpg",
+    "price": 29.99,
+    "description": "Fast and efficient wireless charger for your devices."
+  },
+  {
+    "id": "8",
+    "name": "Noise Cancelling Headphones",
+    "slug": "noise-cancelling-headphones",
+    "image": "/products/headphones.jpg",
+    "price": 179.99,
+    "description": "Premium noise-cancelling headphones for an immersive audio experience."
+  }
+]
