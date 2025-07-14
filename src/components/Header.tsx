@@ -1,16 +1,17 @@
-import Link from 'next/link';
-
+import Link from "next/link";
 
 export default function Header() {
-    return (
-        <header className='bg-white border-b shadow-sm p-4 mb-6'>
-            <nav className='flex justify-between items-center container mx-auto'>
-                <Link href="/" className='text-xl font-bold'>Mini-Commerce</Link>
-                <div className='space-x-4'>
-                    <Link href="/cart">Cart</Link>
-                    <Link href="/checkout">Checkout</Link>
-                </div>
-            </nav>
-        </header>
-    )
+  return (
+    <header className="bg-white border-b shadow-sm p-4 mb-6">
+      <nav className="flex justify-between items-center container mx-auto">
+        <Link href="/" className="text-xl font-bold">
+          Mini-Commerce
+        </Link>
+        <div className="space-x-4">
+          <Link href="/cart">Cart</Link>
+          <Link href="/checkout">Checkout</Link>
+        </div>
+      </nav>
+    </header>
+  );
 }
