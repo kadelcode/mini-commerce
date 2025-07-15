@@ -1,7 +1,6 @@
 "use client";
 import { useRouter } from "next/navigation";
 import { useCart } from "@/store/cart";
-import { useState } from "react";
 
 export default function CheckoutPage() {
   const router = useRouter();
