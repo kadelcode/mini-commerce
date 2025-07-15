@@ -13,19 +13,27 @@ export default function ProductDetailPage() {
   if (!product) return <p>Product not found.</p>;
 
   return (
-    <div className="grid md:grid-colos-2 gap-6">
-      <img
-        src={product.image}
-        alt={product.name}
-        className="w-full rounded-lg"
-      />
-      <div>
+    <div className="grid md:grid-cols-2 gap-8 max-w-6xl mx-auto px-4 py-8">
+      {/* Image section */}
+      <div className="flex flex-col gap-4">
+        <img
+          src={product.image}
+          alt={product.name}
+          className="w-full rounded-lg h-auto max-h-[500px] object-contain bg-gray-500 p-4"
+        />
+      </div>
+
+      {/* Info section */}
+      <div className="flex flex-col gap-4 max-w-[500px]">
         <h1 className="text-2xl font-bold mb-2">{product.name}</h1>
-        <p className="mb-4">{product.description}</p>
-        <p className="text-lg font-semibold mb-6">${product.price}</p>
+        <p className="mb-4 text-gray-700 leading-relaxed">
+          {product.description}
+        </p>
+        <p className="text-2xl font-semibold">${product.price}</p>
         <button
           onClick={() => addToCart({ ...product, quantity: 1 })}
-          className="px-4 py-2 bg-blue-600 text-white rounded hover:bg-blue-700"
+          className="px-6 py-3 bg-blue-600 text-white rounded-lg hover:bg-blue-700
+          transition-colors mt-6 font-medium w-full md:w-auto md:w-[200px]"
         >
           Add to Cart
         </button>
