@@ -3,6 +3,7 @@
 import { useParams } from "next/navigation";
 import { useProducts } from "@/hooks/useProducts";
 import { useCart } from "@/store/cart";
+import { toast } from "sonner";
 
 export default function ProductDetailPage() {
   const { slug } = useParams();
@@ -31,7 +32,10 @@ export default function ProductDetailPage() {
         </p>
         <p className="text-2xl font-semibold">${product.price}</p>
         <button
-          onClick={() => addToCart({ ...product, quantity: 1 })}
+          onClick={() => {
+            addToCart({ ...product, quantity: 1 });
+            toast.success(`${product.name} added to cart!`);
+          }}
           className="px-6 py-3 bg-blue-600 text-white rounded-lg hover:bg-blue-700
           transition-colors mt-6 font-medium w-full md:w-auto md:w-[200px]"
         >
