@@ -37,7 +37,7 @@ export default function ProductDetailPage() {
             toast.success(`${product.name} added to cart!`);
           }}
           className="px-6 py-3 bg-blue-600 text-white rounded-lg hover:bg-blue-700
-          transition-colors mt-6 font-medium w-full md:w-auto md:w-[200px]"
+          transition-colors mt-6 font-medium w-full md:w-auto"
         >
           Add to Cart
         </button>
