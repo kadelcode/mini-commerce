@@ -21,6 +21,7 @@ export default function CartPage() {
         <div className="text-center py-12">
           <p>Your cart is empty.</p>
           <button
+            onClick={handleContinueShopping}
             className="px-4 py-2 bg-blue-600 text-white rounded hover:bg-blue-700
           transition-colors"
           >
@@ -36,7 +37,13 @@ export default function CartPage() {
               transition-shadow"
             >
               <div className="flex items-center space-x-4">
-                <div className="w-16 h-16 bg-gray-100 rounded"></div>
+                <div className="w-16 h-16 bg-gray-100 rounded">
+                  <img
+                    src={item.image}
+                    alt={item.name}
+                    className="w-full h-full object-cover rounded"
+                  />
+                </div>
                 <div>
                   <p className="font-medium">{item.name}</p>
                   <p className="text-gray-600">{item.price.toFixed(2)}</p>
